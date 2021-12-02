@@ -1,0 +1,221 @@
+@media screen and (min-width: 576px){
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+    .container {
+        max-width: 720px;
+    }
+}
+
+.centre {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    display: table;
+    padding-top: 2px;
+    margin: auto;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-color: rgb(226, 247, 211);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+input[type=text]{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 50px;
+    /* box-sizing: ; */
+    /* border: 2px solid #ccc; */
+    /* border-radius: 4px; */
+    font-size: 16px;
+    color: var(--light);
+    background-color: var(--secondary);
+    background-image: url('./loupe_wobg.png') ;
+    background-size: 30px;
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    /* box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.075); */
+}
+
+.coolbutton3{
+    width: wrap;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 20px;
+    height: 30px;
+    text-align:center;
+    border: none;
+    background-size: 100% 100%;
+    border-radius: 50px;
+    background-image: linear-gradient(
+        to right,
+        rgb(229, 228, 147),
+        rgb(136, 134, 248)
+      );
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #381b1b;
+    text-align: left;
+    background-image:url(glitter.jpg);
+    min-height: 700px;
+}
+
+nav { 
+    width: 100%;
+    min-height: 700px;
+    height: 100%;
+    background-image: url(images/nav_background.jpg);
+    background-attachment: fixed;
+    background-blend-mode:overlay;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: right bottom;
+}
+
+header {
+    height: 110px;
+    width: 100%;
+    background-color: rgb(0, 106, 158, 1);
+    background-blend-mode:overlay;
+    float: left;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.header-logo {
+    width: 30%;
+    height: 100px;
+    padding: 5px;
+    padding-left: 50px;
+    float: left;
+}
+
+.header-title {
+    width: 40%;
+    height: 100%;
+    padding: 5px;
+    padding-left: 50px;
+    float: left;
+    text-align: center;
+}
+
+.header-middle {
+	width: 1000px;
+	height: 95px;
+	position: fixed;
+	left: 50%;
+	z-index: 10;
+	margin-left: -500px;
+}
+
+.header-nav {
+    width: 30%;
+    height: 100px;
+    padding: 5px;
+    float: right;
+}
+.header-nav-account{
+    height: inherit;
+    float: right;
+    padding-right: 10px;
+}
+.nav-product {
+    width: 70%;
+    float: right;
+    height: 700px;
+    margin-right: 2%;
+    background-color: var(--light);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    overflow-y: scroll;
+}
+
+.borders{
+    border: width 2px;
+    border-style:inset;
+    border-color:rgb(46, 9, 9);
+}
+
+.nav-filter {
+    width: 20%;
+    float: left;
+    height: 700px;
+    margin-left: 5%;
+    margin-top: 5%;
+    /* padding-left: 6%;
+    padding-top: 6%; */
+    background-color: rgb(229, 228, 147);
+}
+
+footer {
+    height: 100%;
+    text-align: center;
+    background-color: rgb(229, 228, 147);
+   /* border: 3px solid rgb(221, 0, 97, 1);*/
+    padding-top: 30px;
+}
+.Globale{
+    min-height: min-content;
+    height: fit-content;
+    margin: 0px;
+    margin-left: 10%; margin-right: 10%;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 0.125rem 0.258rem rgba(0, 0, 0, 0.315) !important;
+}
+.Globale::after, .sousglobale::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div {
+    display: block;
+}
