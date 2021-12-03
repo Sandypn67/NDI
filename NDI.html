@@ -4,49 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewbag" content="width=device-width, initial_scale=1.0">
     <link rel="stylesheet" type="text/css" href="Love.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <title>La nouvelle année arrive !</title>
   </head>
 
   <body>
     <header>
       <div class="header-logo">
-        <img src="feudart.gif" alt="banniere" style="height: 100px;"></a>
+        <img src="feudart.gif" alt="banniere" style="height: 100px;">
       </div>
       <div class="header-title">
-        <h2 class="coolbutton4" v-if="commandes.length > 0">C'est bientôt l'heure !</h2></a>
-     </div>
-  </header>
+        <h2 class="coolbutton4" v-if="commandes.length > 0">C'est bientôt l'heure !</h2>
+      </div>
+    </header>
 
-  <nav>
-    <div id="user">
+    <nav>
+      <div id="app">
         <div class="Globale">
-            <div class="nav-product">
-              <div class="nav-product-block ">
+          <div class="nav-product">
+            <div class="nav-product-block ">
+              <br>
+              <b>Dites nous à qui vous voulez envoyez vos meilleurs voeux :</b>
+              <br>
+              <hr><br>
+              <div>
+                <label for="email">Entrez l'email du destinataire:</label> 
                 <br>
-                    <b>Dites nous à qui vous voulez envoyez vos meilleurs voeux :<br></b>
-                    <hr><br>
-                    <div>
-                        <label for="email">Entrez l'email du destinataire:</label> <br>
-
-                    <input type="email" id="email" size="0" required>
-                    </div>
+                <input type="email" id="email" size="0" required placeholder="Email du destinataire... ">
+                <br><br>
+                <img src="https://c.tenor.com/O5IiqN_R6VUAAAAi/dog-gag.gif" alt="banniere" style="height: 100px;"></img>
+                <br>
+                <label for="url_gif">Insérer l'adresse du gif que vous voulez ajouter au message</label>
+                <br>
+                <input type="url" id="input_url_gif" v-model="gif_url" v-on:keyup.enter="submit" placeholder="L'URL de votre gif...">
+                <br><br>
+                <img v-bind:src="gif_url" v-bind:alt="gif_url" style="height: 300px;"></img>
               </div>
             </div>
-            <div class="nav-filter borders">
-                <br><br><br><br>
-                <input class="coolbutton3" type="button" value="Envoyer un gif"></a>
-                <br><br><br><br>
-                <input class="coolbutton3" type="button" value="Envoyer une chanson"></a>
-                <br><br><br><br>
-                <input class="coolbutton3" type="button" value="Envoyer une image"></a>
-                <br><br><br><br>
-                <input class="coolbutton3" type="button" value="Envoyer un texte"></a>
-            </div>
+          </div>
+          <div class="nav-filter borders">
+            <br><br><br><br>
+            <input class="coolbutton3" type="button" value="Envoyer un gif">
+            <br><br><br><br>
+            <input class="coolbutton3" type="button" value="Envoyer une chanson">
+            <br><br><br><br>
+            <input class="coolbutton3" type="button" value="Envoyer une image">
+            <br><br><br><br>
+            <input class="coolbutton3" type="button" value="Envoyer un texte">
+          </div>
         </div>
-    </div>
-        
+      </div>
+      <script>
+        app = new Vue({
+          el: '#app',
+          data: {
+            gif_url :"https://c.tenor.com/sDU10mpmaaEAAAAd/perro-wave.gif",
+            gif_status: 0,
+            chanson_status: 0,
+            image_status: 0,
+          },
+          methods:{
+            getGifUrl() {
+              this.gif_url =document.getElementById('input_url_gif').value
+            }
+          }
 
-
+        })
+      </script>
     </nav>
 
     <footer>
