@@ -26,9 +26,14 @@
                     <b>Dites nous à qui vous voulez envoyez vos meilleurs voeux :<br></b>
                     <hr><br>
                     <div>
+                      <form method="POST" action="mail.php">
                         <label for="email">Entrez l'email du destinataire:</label> <br>
-
-                    <input type="email" id="email" size="0" required>
+                        <button id="button_mymail">Ajouter un mail</button>
+                        <div id="block_mymail">
+                          <input type="email" name="email[]" placeholder="test@mail.com">
+                        </div>
+                        <input type="submit" value="Send">
+                      </form>
                     </div>
               </div>
             </div>
@@ -54,5 +59,6 @@
       <br>
     </footer>
   </body>
+  <script type="text/javascript" src="mail.js"></script>
 
 </html>
