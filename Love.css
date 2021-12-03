@@ -34,7 +34,7 @@
     }
 }
 
-.centre {
+/* .centre {
     width: 100%;
     height: 20px;
     text-align: center;
@@ -45,25 +45,25 @@
     font-weight: bold;
     background-color: rgb(226, 247, 211);
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
+} */
 
-input[type=text]{
+ input[type=text], input[type=url], input[type=email]{
     margin-top: 10px;
-    width: 100%;
+    width: fit-content;
     border-radius: 50px;
     /* box-sizing: ; */
     /* border: 2px solid #ccc; */
     /* border-radius: 4px; */
     font-size: 16px;
-    color: var(--light);
-    background-color: var(--secondary);
+    color: black;
+    /* background-color: white;
     background-image: url('./loupe_wobg.png') ;
     background-size: 30px;
     background-position: 10px 50%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     padding-left: 40px;
     /* box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.075); */
-}
+} 
 
 .coolbutton3{
     width: wrap;
@@ -94,6 +94,7 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    text-align: center;
 }
 
 body {
@@ -105,19 +106,26 @@ body {
     color: #381b1b;
     text-align: left;
     background-image:url(glitter.jpg);
+    background-attachment: fixed;
+    background-blend-mode:overlay;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: right bottom;
     min-height: 700px;
+    height: 100%;
+    width: 100%;
 }
 
 nav { 
     width: 100%;
     min-height: 700px;
     height: 100%;
-    background-image: url(images/nav_background.jpg);
+    /* background-image: url(images/nav_background.jpg);
     background-attachment: fixed;
     background-blend-mode:overlay;
     background-repeat: repeat-y;
     background-size: 100%;
-    background-position: right bottom;
+    background-position: right bottom; */
 }
 
 header {
@@ -146,26 +154,27 @@ header {
     text-align: center;
 }
 
-.header-middle {
+/* .header-middle {
 	width: 1000px;
 	height: 95px;
 	position: fixed;
 	left: 50%;
 	z-index: 10;
 	margin-left: -500px;
-}
+} */
 
-.header-nav {
+/* .header-nav {
     width: 30%;
     height: 100px;
     padding: 5px;
     float: right;
-}
-.header-nav-account{
+} */
+/* .header-nav-account{
     height: inherit;
     float: right;
     padding-right: 10px;
-}
+} */
+
 .nav-product {
     width: 70%;
     float: right;
@@ -186,7 +195,7 @@ header {
     width: 20%;
     float: left;
     height: 700px;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-top: 5%;
     /* padding-left: 6%;
     padding-top: 6%; */
@@ -204,7 +213,7 @@ footer {
     min-height: min-content;
     height: fit-content;
     margin: 0px;
-    margin-left: 10%; margin-right: 10%;
+    margin-left: 5%; margin-right: 5%;
     padding: 10px;
     text-align: center;
     color: black;
